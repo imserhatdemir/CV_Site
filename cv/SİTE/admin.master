@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="cvsite.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+      <title>Admin</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="default.aspx">CV Admin</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a href="istatistik.aspx">İstatistikler</a></li>
+      <li ><a href="bilgi.aspx">Bilgi</a></li>
+      <li ><a href="hakkımda.aspx">Hakkımda</a></li>
+      <li ><a href="egitim.aspx">Eğitim Hayatım</a></li>
+      <li><a href="deneyimler.aspx">Deneyimler</a></li>
+      <li><a href="yetenekler.aspx">Yeteneklerim</a></li>
+      <li><a href="iletisim.aspx">İletişim</a></li>
+    </ul>
+  </div>
+</nav>
+        <div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
